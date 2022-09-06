@@ -1,0 +1,43 @@
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.top-left {
+    width: 70%;
+}
+.top-right {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+div.top-right > button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.need-help {
+    color: #000000de;
+    background-color: #fff;
+}
+.inleveren {
+    color: #fff;
+    background-color: #57be8e;
+}
