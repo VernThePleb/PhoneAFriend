@@ -1,6 +1,10 @@
+var online_students = new Array();
+
 $(document).ready(function () {
-  $("button").onclick(function () {
-    $("div").load("index.php");
+  $("button").click(function () {
+    $.get("src/index.php", function (data) {
+      online_students = data;
+    });
   });
 });
 
@@ -9,5 +13,9 @@ function showTimer() {
 }
 
 function fetchResult() {
-  window.location = "index.php";
+  $.get("src/index.php", function (data) {
+    online_students = data;
+  });
 }
+
+console.log(online_students);
