@@ -1,21 +1,31 @@
-var online_students = new Array();
+var obj = new Object();
 
 $(document).ready(function () {
   $("button").click(function () {
-    $.get("src/index.php", function (data) {
-      online_students = data;
+    $.get("src/json.json", function (data) {
+      obj = data;
+      console.log(obj);
     });
+    showTimer();
   });
 });
 
 function showTimer() {
-  setTimeout(fetchResult(), 600000);
+  setTimeout(() => {
+    fetchResult();
+  }, 600000);
+  run_clock("clock", deadline);
 }
 
 function fetchResult() {
-  $.get("src/index.php", function (data) {
-    online_students = data;
+  $.get("src/json.json", function (data) {
+    obj = data;
+    console.log(data);
   });
 }
 
-console.log(online_students);
+function displayMatch() {
+  $("#");
+}
+
+console.log(obj);
