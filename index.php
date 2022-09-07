@@ -2,13 +2,14 @@
 
 require 'header.php';
 ?>
-<link rel="stylesheet" href="css/excercise.css">
+<link rel="stylesheet" href="css/exercise.css">
 
 <main>
     <div class="top">
         <div class="top-left">
+
             <h1>
-                <-- Excercise name</h1>
+                <-- Exercise name</h1>
         </div>
         <div class="top-right">
             <button class="need-help">I need help</button>
@@ -17,11 +18,14 @@ require 'header.php';
         </div>
 
     </div>
-    <div class="excercise-info">
-        <!-- links van de excercise met algemene info -->
-    </div>
-    <div class="exercice">
-        <!-- de excercise -->
+    <div class="exercise-container">
+        <div class="exercise-info">
+            <!-- links van de exercise met algemene info -->
+        </div>
+        <div class="exercise">
+            <!-- de exercise -->
+        </div>
+
     </div>
 </main>
 <?php
