@@ -6,8 +6,8 @@
 =======
     <form method="post" action="statusChange.php">
     <button>HELP</button>
-    <input type="hidden" name="studentID" value="1">
-    <input type="hidden" name="exerciseID" value="1">
+    <input type="hidden" name="studentID" value="3">
+    <input type="hidden" name="exerciseID" value="3">
 
 </form>
         

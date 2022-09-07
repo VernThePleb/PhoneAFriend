@@ -16,9 +16,11 @@ function getMessage()
     "fuck";
 }
 
-$sql = "
-UPDATE exercisestudent
-SET status = 'Struggling' WHERE StudentId = $_POST['studentID'] AND ExerciseId = $_POST['exerciseID'];";
+$studentId = $_POST['studentID'];
+$exerciseId = $_POST['exerciseID'];
+
+$sql = "UPDATE exercisestudent SET 
+status = 'Struggling' WHERE StudentId = $studentId AND ExerciseId = $exerciseId;";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 
