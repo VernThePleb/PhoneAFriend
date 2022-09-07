@@ -4,9 +4,21 @@ let path = [];
 $(document).ready(function () {});
 
 $("#help").click(function () {
+  pop();
   fetchResult();
   showTimer();
 });
+
+$(".close").click(function () {
+  document.getElementById("pop").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+});
+
+function popup() {
+  document.getElementById("pop").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+};
+
 
 function showTimer() {
   setTimeout(() => {
@@ -31,7 +43,8 @@ function displayMatch() {
   function fetchStudents(matched_students) {
     student_key_buddy = getParent();
   }
-  $("#pop").removeAttr("hidden");
+  document.getElementById("pop").style.display = "block";
+
   $("#name").html();
 }
 
