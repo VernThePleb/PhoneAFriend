@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-<<<<<<< Updated upstream
         
-=======
     <form method="post" action="statusChange.php">
     <button>HELP</button>
     <input type="hidden" name="studentID" value="3">
@@ -18,6 +16,5 @@
             <div id="status"></div>
             <img id="picture"></img>
         </div>
->>>>>>> Stashed changes
     </body>
 </html>
