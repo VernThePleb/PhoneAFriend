@@ -3,7 +3,7 @@
     <body>
         <button></button>
         <div id="clock"></div>
-        <div hidden>
+        <div id="pop" hidden>
             <div id="name"></div>
             <div id="userName"></div>
             <div id="status"></div>
