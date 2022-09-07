@@ -12,7 +12,7 @@ require 'header.php';
                 <-- Exercise name</h1>
         </div>
         <div class="top-right">
-            <button class="need-help">I need help</button>
+            <button id="help" class="need-help">I need help</button>
             <button class="inleveren">Inleveren</button>
 
         </div>
@@ -27,6 +27,9 @@ require 'header.php';
         </div>
 
     </div>
+    <?php
+    require 'popup.php';
+    ?>
 </main>
 <?php
 require 'footer.php';
