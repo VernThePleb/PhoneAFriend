@@ -12,7 +12,7 @@ require 'header.php';
                 <-- Exercise name</h1>
         </div>
         <div class="top-right">
-            <div class="clock"></div>
+            <div id="index_clock" class="clock"></div>
             <button id="help" class="need-help">I need help</button>
             <button class="inleveren">Inleveren</button>
 
