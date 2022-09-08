@@ -50,7 +50,7 @@ function displayMatch() {
   document.getElementById("buddy").style.display = "block";
 
   function fetchStudents() {
-    id = obj.matched_students.id2;
+    id = obj.matched_students.id1;
     console.log("id" + id);
     helper = obj.students[id];
     return helper;
@@ -60,7 +60,9 @@ function displayMatch() {
 
   console.log(helper);
   $("#name").html(helper.name);
-  $("#status").html(helper.status);
+  if (helper.status == "STRUGGLE") {
+    $("#status").html("heeft hulp nodig");
+  }
 }
 
 console.log(obj);

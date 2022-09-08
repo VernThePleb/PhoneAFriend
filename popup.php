@@ -18,7 +18,7 @@
         <h2>We hebben iemand gevonden!</h2>
         <img id="picture" src="src/photo.png" width="50" height="auto">
         <div id="name"></div>
-        <div id="opdrachtstatus"></div>
+        <div id="status"></div>
         <button class="close">Ik ga er heen</button>
     </div>
 </div>
