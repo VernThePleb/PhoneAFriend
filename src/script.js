@@ -1,5 +1,4 @@
 var obj = new Object();
-let path = [];
 
 $(document).ready(function () {});
 
@@ -45,24 +44,17 @@ function fetchResult() {
 }
 
 function displayMatch() {
-  function fetchStudents(matched_students) {
-    student_key_buddy = getParent();
+  function fetchStudents() {
+    id = obj.matched_students.id2;
+    console.log("id" + id);
+    let helper = obj.students[id];
+    return helper;
   }
-  $("#name").html();
-}
-
-function getParent(path, json, value) {
-  for (var key in json) {
-    if (typeof json[key] === "object") {
-      path.push(key.toString());
-      getParent(path, json[key], value);
-      path.pop();
-    } else {
-      if (json[key] == value) {
-        return path[0];
-      }
-    }
-  }
+  var helper = fetchStudents();
+  console.log(helper);
+  $("#pop").removeAttr("hidden");
+  $("#name").html(helper.name);
+  $("#status").html(helper.status);
 }
 
 console.log(obj);
