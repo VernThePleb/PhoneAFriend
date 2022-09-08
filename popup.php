@@ -11,10 +11,11 @@
     </div>
 
     <div id="buddy">
-        <div id="name">1</div>
-        <div id="userName">2</div>
-        <div id="status">3</div>
-        <img id="picture">4</img>
+        <h2>We hebben iemand gevonden!</h2>
+        <img id="picture"></img>
+        <div id="name"></div>
+        <div id="opdrachtstatus"></div>
+        <button class="close">Ik ga er heen</button>
     </div>
 </div>
 <div id="overlay"></div>
