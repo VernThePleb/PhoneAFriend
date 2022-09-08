@@ -1,6 +1,6 @@
-var time_in_minutes = 10;
+var time_in_minutes = 2;
 var current_time = Date.parse(new Date());
-var deadline = new Date(current_time + time_in_minutes * 60 * 1000);
+var deadline = new Date(current_time + time_in_minutes * 60 * 10000);
 var timeIntervals = new Array();
 
 function time_remaining(endTime) {
@@ -36,7 +36,7 @@ function run_clock(id, endTime) {
   update_clock(); // run function once at first to avoid delay
   var timeInterval = setInterval(update_clock, 1000);
   timeIntervals.push(timeInterval);
-  console.log(timeInterval);
+  // console.log(timeInterval);
 }
 
 function clear_clock() {

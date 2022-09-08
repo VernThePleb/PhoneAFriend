@@ -11,10 +11,10 @@
     </div>
 
     <div id="buddy">
-        <div id="name"></div>
-        <div id="userName"></div>
-        <div id="status"></div>
-        <img id="picture"></img>
+        <div id="name">1</div>
+        <div id="userName">2</div>
+        <div id="status">3</div>
+        <img id="picture">4</img>
     </div>
 </div>
 <div id="overlay"></div>
