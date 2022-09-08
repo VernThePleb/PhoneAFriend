@@ -5,7 +5,7 @@
     <div id="load">
         <!-- picture of the bit robot -->
         <h2>We gaan iemand voor je zoeken!</h2>
-        <div id="clock"></div>
+        <div class="clock"></div>
         <button class="close">Nog even door werken</button>
 
     </div>

@@ -4,9 +4,9 @@ let path = [];
 $(document).ready(function () {});
 
 $("#help").click(function () {
-  pop();
+  popup();
   fetchResult();
-  showTimer();
+  timer();
 });
 
 $(".close").click(function () {
@@ -19,6 +19,10 @@ function popup() {
   document.getElementById("overlay").style.display = "block";
 };
 
+function timer(){
+  document.getElementById("help").style.display = "none";
+  showTimer();
+}
 
 function showTimer() {
   setTimeout(() => {
@@ -27,6 +31,7 @@ function showTimer() {
   current_time = Date.parse(new Date());
   deadline = new Date(current_time + time_in_minutes * 60 * 1000);
   run_clock("clock", deadline);
+
 }
 
 function fetchResult() {
@@ -43,8 +48,6 @@ function displayMatch() {
   function fetchStudents(matched_students) {
     student_key_buddy = getParent();
   }
-  document.getElementById("pop").style.display = "block";
-
   $("#name").html();
 }
 
