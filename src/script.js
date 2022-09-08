@@ -69,6 +69,7 @@ function displayMatch() {
   // $("#pop").removeAttr("hidden");
   $("#name").html(helper.name);
   $("#status").html(helper.status);
+  $("#picture").src("src/photo.js");
 }
 
 console.log(obj);
