@@ -1,6 +1,6 @@
 var time_in_minutes = 2;
 var current_time = Date.parse(new Date());
-var deadline = new Date(current_time + time_in_minutes * 60 * 10000);
+var deadline = new Date(current_time + time_in_minutes * 60 * 1000);
 var timeIntervals = new Array();
 
 function time_remaining(endTime) {
@@ -23,12 +23,12 @@ function run_clock(id, endTime) {
   function update_clock() {
     var t = time_remaining(endTime);
     var tijd = "minutes: " + t.minutes + "<br>seconds: " + t.seconds;
-    [].slice.call( clocks ).forEach(function ( clock ) {
-    clock.innerHTML = tijd;
-  });
+    [].slice.call(clocks).forEach(function (clock) {
+      clock.innerHTML = tijd;
+    });
     if (t.total <= 0) {
       clearInterval(timeInterval);
-      [].slice.call( clocks ).forEach(function ( clock ) {
+      [].slice.call(clocks).forEach(function (clock) {
         clock.innerHTML = "";
       });
     }

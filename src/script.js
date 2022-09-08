@@ -18,9 +18,9 @@ $(".close").click(function () {
 function popup() {
   document.getElementById("pop").style.display = "block";
   document.getElementById("overlay").style.display = "block";
-};
+}
 
-function timer(){
+function timer() {
   document.getElementById("help").style.display = "none";
   document.getElementById("load").style.display = "block";
   showTimer();
@@ -29,17 +29,19 @@ function timer(){
 function showTimer() {
   setTimeout(() => {
     fetchResult();
-  }, 600000);
+  }, 30000);
   current_time = Date.parse(new Date());
-  time_in_minutes= 2 ;
+  // for testing
+  // deadline = new Date(current_time + time_in_minutes * 60 * 10);
+  // origenal line
+  time_in_minutes = 2;
   deadline = new Date(current_time + time_in_minutes * 60 * 1000);
   run_clock("clock", deadline);
-
 }
 
 function fetchResult() {
   $.get("src/json.json", function (data) {
-    obj = JSON.parse(data);
+    obj = data;
     // obj = data;
     console.log(obj);
     if (obj.match) {
