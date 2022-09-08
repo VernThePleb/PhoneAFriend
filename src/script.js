@@ -35,7 +35,8 @@ function showTimer() {
 
 function fetchResult() {
   $.get("src/json.json", function (data) {
-    obj = data;
+    // obj = data;
+    obj = JSON.parse(data);
     console.log(obj);
     if (obj.match) {
       displayMatch();

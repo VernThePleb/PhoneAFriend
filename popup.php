@@ -1,12 +1,16 @@
 <link rel="stylesheet" href="css/popup.css">
+<link rel="stylesheet" href="css/exercise.css">
 
 
 <div id="pop">
     <div id="load">
         <!-- picture of the bit robot -->
         <h2>We gaan iemand voor je zoeken!</h2>
+        <p>maximale wachttijd:</p>
         <div class="clock"></div>
-        <button class="close">Nog even door werken</button>
+        <div class="buttoncontainer">
+            <button class="close">Nog even door werken</button>
+        </div>
 
     </div>
 

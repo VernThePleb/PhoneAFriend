@@ -63,3 +63,18 @@ position: relative;
 .exercise{
     width: 760px;
 }
+
+.close {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 5px 15px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
