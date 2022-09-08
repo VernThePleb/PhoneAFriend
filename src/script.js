@@ -60,7 +60,6 @@ function displayMatch() {
   console.log(helper);
   $("#name").html(helper.name);
   $("#status").html(helper.status);
-  $("#picture").src("src/photo.js");
 }
 
 console.log(obj);
