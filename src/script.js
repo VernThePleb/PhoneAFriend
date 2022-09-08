@@ -35,8 +35,8 @@ function showTimer() {
 
 function fetchResult() {
   $.get("src/json.json", function (data) {
-    obj = data;
-    // obj = JSON.parse(data);
+    // obj = data;
+    obj = JSON.parse(data);
     console.log(obj);
     if (obj.match) {
       displayMatch();
@@ -51,7 +51,7 @@ function displayMatch() {
   document.getElementById("buddy").style.display = "block";
 
   function fetchStudents() {
-    id = obj.matched_students.id1;
+    id = obj.matched_students.id2;
     console.log("id" + id);
     helper = obj.students[id];
     return helper;
