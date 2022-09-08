@@ -35,7 +35,8 @@ function showTimer() {
 
 function fetchResult() {
   $.get("src/json.json", function (data) {
-    obj = data;
+    // obj = data;
+    obj = JSON.parse(data);
     console.log(obj);
     if (obj.match) {
       displayMatch();
@@ -45,6 +46,7 @@ function fetchResult() {
 
 function displayMatch() {
   popup();
+  document.getElementById("index_clock").style.display = "none";
   document.getElementById("load").style.display = "none";
   document.getElementById("buddy").style.display = "block";
 
@@ -59,7 +61,9 @@ function displayMatch() {
 
   console.log(helper);
   $("#name").html(helper.name);
-  $("#status").html(helper.status);
+  if (helper.status == "STRUGGLE") {
+    $("#status").html("heeft hulp nodig");
+  }
 }
 
 console.log(obj);
