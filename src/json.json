@@ -1,0 +1,27 @@
+{
+  "match": true,
+  "matched_students": {
+    "id1": "jadskfhlsadkjfasdj",
+    "id2": "klajdsf;flkasjas;djk"
+  },
+  "students": {
+    "jadskfhlsadkjfasdj": {
+      "id": "jadskfhlsadkjfasdj",
+      "name": "John Doe",
+      "userName": "johndoe-a4F4jc",
+      "status": "ONLINE"
+    },
+    "klajdsf;flkasjas;djk": {
+      "id": "klajdsf;flkasjas;djk",
+      "name": "Jerry Doe",
+      "userName": "jerrydoe-fjc4F8",
+      "status": "ONLINE"
+    },
+    "aj;ksdlfcvfutoeq": {
+      "id": "aj;ksdlfcvfutoeq",
+      "name": "Mon Doe",
+      "userName": "mondoe-fjc4F8",
+      "status": "ONLINE"
+    }
+  }
+}

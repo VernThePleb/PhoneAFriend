@@ -1,0 +1,16 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+#menu {
+    padding: 2px;
+    padding-left: 1em;
+    background-color: #000563;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu-image {
+    height: 3em;
+}
