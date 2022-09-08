@@ -9,7 +9,7 @@ require 'header.php';
         <div class="top-left">
 
             <h1>
-                <-- Exercise name</h1>
+                <-- Relaties leggen</h1>
         </div>
         <div class="top-right">
             <div id="index_clock" class="clock"></div>
@@ -22,9 +22,11 @@ require 'header.php';
     <div class="exercise-container">
         <div class="exercise-info">
             <!-- links van de exercise met algemene info -->
+            <img class="exercise-img" src="img/exercise_info.png" alt="exercise information">
         </div>
         <div class="exercise">
             <!-- de exercise -->
+            <img class="exercise-img" src="img/exercise.png" alt="exercise">
         </div>
 
     </div>
